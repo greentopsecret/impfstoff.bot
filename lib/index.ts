@@ -39,7 +39,7 @@ function checkFirstAvailableDate(dates: ImpfstoffLinkVenue['stats'], dateKeys: D
         return { availableDate: null }
       }
 
-      if ((diffMins === 0 || diffMins === 1 || diffMins === 2) && usedQueue[dateKeys[i]] === 0) {
+      if ((diffMins === 0 || diffMins === 1) && usedQueue[dateKeys[i]] === 0) {
         return { availableDate: null }
       }
 
