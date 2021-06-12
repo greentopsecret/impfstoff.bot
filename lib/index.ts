@@ -5,8 +5,8 @@ import { send } from './bots'
 import { logger } from './logger'
 import { fetchImpfstoffLink, DateKey, ImpfstoffLinkVenue } from './impfstoff-link'
 
-const DIFF_MIN = 3 // 3 minutes safe check
-const TIMER_BOT_FETCH = 2 * 1000 // 2 seconds
+const DIFF_MIN = 2 // 2 minutes safe check
+const TIMER_BOT_FETCH = 1 * 1000 // 1 second
 
 const urls = {
   arena: 'https://bit.ly/2PL4I8J',
