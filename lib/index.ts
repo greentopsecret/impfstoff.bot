@@ -74,7 +74,7 @@ setInterval(() => {
 
         const { availableDate = null } = checkFirstAvailableDate(dates, dateKeys) ?? {}
 
-        if (availableDate) {
+        if (availableDate && new Date(availableDate) < new Date('2021-07-13')) {
           const link = urls[place]
           const date = new Date(availableDate).toLocaleDateString('de-DE')
 
